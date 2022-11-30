@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -61,42 +61,42 @@
     <main>
       <!--Портфоліо-->
 
-      <section class="portfolio-section section">
+      <section class="section">
         <div class="container">
-          <h1 class="portfolio-title visually-hidden">Портфоліо</h1>
-          <ul class="portfolio-filter list">
-            <li class="item">
-              <button type="button" class="button pointer">Усі</button>
+          <h1 class="section__title visually-hidden">Портфоліо</h1>
+          <ul class="filter">
+            <li class="filter__item">
+              <button type="button" class="button">Усі</button>
             </li>
-            <li class="item">
-              <button type="button" class="button pointer">Веб-сайти</button>
+            <li class="filter__item">
+              <button type="button" class="button">Веб-сайти</button>
             </li>
-            <li class="item">
-              <button type="button" class="button pointer">Додатки</button>
+            <li class="filter__item">
+              <button type="button" class="button">Додатки</button>
             </li>
-            <li class="item">
-              <button type="button" class="button pointer">Дизайн</button>
+            <li class="filter__item">
+              <button type="button" class="button">Дизайн</button>
             </li>
-            <li class="item">
-              <button type="button" class="button pointer">Маркетинг</button>
+            <li class="filter__item">
+              <button type="button" class="button">Маркетинг</button>
             </li>
           </ul>
 
           <!--portfolio-list-->
 
-          <ul class="portfolio-list list">
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-thumb">
+          <ul class="portfolio">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
                   <img
-                    class="portfolio-card"
+                    class="portfolio__image"
                     src="./images/technokriack.jpg"
                     alt="Сторінка на дісплеї ноутбука"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -104,25 +104,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-title-text">
-                  <h2 class="portfolio-subtitle">Технокряк</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__subtitle">Технокряк</h2>
+                  <p class="portfolio__description">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
                   <img
-                    class="portfolio-card"
+                    class="portfolio__image"
                     src="./images/poster-sport.jpg"
                     alt="Два баскетболіста борються за м'яч"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -130,27 +130,27 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-title-text">
-                  <h2 class="portfolio-subtitle">
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__subtitle">
                     Постер <span lang="en">Orlean vs Golden Star</span>
                   </h2>
-                  <p class="portfolio-text">Дизайн</p>
+                  <p class="portfolio__description">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
                   <img
-                    class="portfolio-card"
+                    class="portfolio__image"
                     src="./images/seafood.jpg"
                     alt="Назва ресторану на фоні риби"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -158,27 +158,27 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-title-text">
-                  <h2 class="portfolio-subtitle">
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__subtitle">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="portfolio-text">Додаток</p>
+                  <p class="portfolio__description">Додаток</p>
                 </div>
               </a>
             </li>
 
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
                   <img
-                    class="portfolio-card"
+                    class="portfolio__image"
                     src="./images/project-prime.jpg"
                     alt="Навушники"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -186,27 +186,27 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-title-text">
-                  <h2 class="portfolio-subtitle">
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__subtitle">
                     Проєкт <span lang="en">Prime</span>
                   </h2>
-                  <p class="portfolio-text">Маркетинг</p>
+                  <p class="portfolio__description">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
                   <img
-                    class="portfolio-card"
+                    class="portfolio__image"
                     src="./images/project-boxes.jpg"
                     alt="Біла та коричнева коробки"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -214,27 +214,27 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-title-text">
-                  <h2 class="portfolio-subtitle">
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__subtitle">
                     Проєкт <span lang="en">Boxes</span>
                   </h2>
-                  <p class="portfolio-text">Додаток</p>
+                  <p class="portfolio__description">Додаток</p>
                 </div>
               </a>
             </li>
 
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
                   <img
-                    class="portfolio-card"
+                    class="portfolio__image"
                     src="./images/inspiration.jpg"
                     alt="Сторінка на моніторі комп'ютера"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -242,27 +242,27 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-title-text">
-                  <h2 class="portfolio-subtitle" lang="en">
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__subtitle" lang="en">
                     Inspiration has no Borders
                   </h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                  <p class="portfolio__description">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
                   <img
-                    class="portfolio-card"
+                    class="portfolio__image"
                     src="./images/limited-edition.jpg"
                     alt="Розгорнутий журнал"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -270,27 +270,27 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-title-text">
-                  <h2 class="portfolio-subtitle">
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__subtitle">
                     Видання <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="portfolio-text">Дизайн</p>
+                  <p class="portfolio__description">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
                   <img
-                    class="portfolio-card"
+                    class="portfolio__image"
                     src="./images/project-lab.jpg"
                     alt="Бирка з написом"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -298,27 +298,27 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-title-text">
-                  <h2 class="portfolio-subtitle">
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__subtitle">
                     Проєкт <span lang="en">LAB</span>
                   </h2>
-                  <p class="portfolio-text">Маркетинг</p>
+                  <p class="portfolio__description">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="portfolio-item">
-              <a href="#" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__thumb">
                   <img
-                    class="portfolio-card"
+                    class="portfolio__image"
                     src="./images/growing-business.jpg"
                     alt="Сторінка додатку на моніторі ноутбука"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -326,9 +326,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-title-text">
-                  <h2 class="portfolio-subtitle" lang="en">Growing Business</h2>
-                  <p class="portfolio-text">Додаток</p>
+                <div class="portfolio__wrapper">
+                  <h2 class="portfolio__subtitle" lang="en">Growing Business</h2>
+                  <p class="portfolio__description">Додаток</p>
                 </div>
               </a>
             </li>
