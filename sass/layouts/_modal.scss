@@ -1,0 +1,142 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-backdrop-color);
+  transition: opacity var(--tra), visibility var(--tra);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1);
+  width: 528px;
+  height: 581px;
+  background-color: var(--white-color);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform var(--tra);
+  padding: 40px;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--border-close-button-color);
+  border-radius: 50%;
+  cursor: pointer;
+  fill: black;
+  background-color: var(--white-color);
+  transition: fill var(--tra);
+}
+
+.modal__close-button:hover,
+.modal__close-button:focus {
+  fill: var(--accent-color);
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  color: var(--title-text-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form__input-wrapper {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form__label {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  outline: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--input-border-color);
+  border-radius: 4px;
+  padding-left: 42px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--title-text-color);
+  transition: border-color var(--tra);
+}
+
+.form__input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--input-placeholder-color);
+}
+
+.form__input:focus {
+  border-color: var(--accent-color);
+}
+
+.form__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  fill: var(--title-text-color);
+  transform: translateY(-50%);
+  transition: fill var(--tra);
+}
+
+.form__input:focus + .form__icon {
+  fill: var(--accent-color);
+}
+
+.form__comment-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form__input--comment {
+  height: 120px;
+  resize: none;
+  padding-left: 16px;
+}
