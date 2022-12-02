@@ -1,6 +1,31 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--secondary-background-color);
+}
+
+.container--footer {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
 .page-header__logo {
   color: var(--white-color);
   margin-bottom: 20px;
+}
+
+.address__item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.contacts-link--address {
+  color: var(--white-color);
+}
+
+.contacts-link--footer {
+  color: var(--secondary-text-color);
+  
 }
 
 .social__link--footer {
