@@ -338,105 +338,83 @@
     <!--Футер-->
 
     <footer class="page-footer">
-      <div class="container footer-container">
+      <div class="container container--footer">
         <div>
-          <a href="./index.html" class="logo-footer logo"
-            ><span class="logo-link">Web</span>Studio</a
-          >
+          <a href="./index.html" class="logo page-footer__logo"><span class="logo__text">Web</span>Studio</a>
+    
           <address class="address">
-            <ul class="address list">
-              <li class="item">
-                <a
-                  href="https://goo.gl/maps/zwCasqjWgcNjda1f8"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="address-link button primary"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+            <ul class="address__list">
+              <li class="address__item">
+                <a href="https://goo.gl/maps/zwCasqjWgcNjda1f8" target="_blank" rel="noreferrer noopener"
+                  class="contacts-link contacts-link--address">м. Київ, пр-т Лесі Українки, 26</a>
               </li>
-              <li class="item">
-                <a href="mailto:info@devstudio.com" class="button primary link"
-                  >info@devstudio.com</a
-                >
+    
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="contacts-link contacts-link--footer">info@devstudio.com</a>
               </li>
-              <li class="item">
-                <a href="tel:+380961111111" class="button primary link"
-                  >+38 096 111 11 11</a
-                >
+    
+              <li class="address__item">
+                <a href="tel:+380961111111" class="contacts-link contacts-link--footer">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-
-        <div class="footer-social">
-          <h3 class="footer-subtitle">приєднуйтесь</h3>
-          <ul class="footer-soc list">
-            <li class="footer-soc-item">
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="footer-thumb thumb"
-              >
-                <svg class="icon" width="20" height="20">
+    
+        <div class="page-footer__wrapper">
+          <h3 class="page-footer__subtitle">приєднуйтесь</h3>
+          <ul class="social">
+            <li class="social__item">
+              <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"
+                class="social__link social__link--footer">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-
-            <li class="footer-soc-item">
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="footer-thumb thumb"
-              >
-                <svg class="icon" width="20" height="20">
+    
+            <li class="social__item">
+              <a href="https://www.twitter.com" target="_blank" rel="noreferrer noopener"
+                class="social__link social__link--footer">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-
-            <li class="footer-soc-item">
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="footer-thumb thumb"
-              >
-                <svg class="icon" width="20" height="20">
+    
+            <li class="social__item">
+              <a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener"
+                class="social__link social__link--footer">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-
-            <li class="footer-soc-item">
-              <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="footer-thumb thumb"
-              >
-                <svg class="icon" width="20" height="20">
+    
+            <li class="social__item">
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener"
+                class="social__link social__link--footer">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-
-        <div class="footer-subscription">
-          <h3 class="footer-subtitle">Підпишіться на розсилку</h3>
-          <form class="footer-form">
-            <div class="footer-field">
-              <input type="email" name="mail" class="footer-input" placeholder="E-mail" />
+    
+        <div class="page-footer__subscription">
+          <h3 class="page-footer__subtitle">Підпишіться на розсилку</h3>
+          <form class="page-footer__form">
+            <div class="page-footer__field">
+              <label class="page-footer__label">
+                <input type="email" name="mail" class="page-footer__input" placeholder="E-mail" />
+              </label>
             </div>
-        
-            <div class="footer-send">
-              <button type="submit" class="button-footer-send">
+    
+            <div class="page-footer__send">
+              <button type="submit" class="button button--footer">
                 Підписатися
               </button>
-              <svg class="icon-send" width="24" height="24">
+              <svg class="page-footer__icon-send" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
             </div>
