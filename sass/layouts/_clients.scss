@@ -1,0 +1,29 @@
+.clients {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--social-links-color);
+  border: 1px solid;
+  border-color: var(--social-links-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color var(--tra), border-color var(--tra);
+}
+
+.clients__thumb:hover,
+.clients__thumb:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients__icon {
+  fill: currentColor;
+}

@@ -105,6 +105,24 @@ button {
   color: var(--accent-color);
 }
 
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .page-header {
   border-bottom: 1px solid var(--header-border-color);
 }
@@ -360,22 +378,14 @@ button {
   line-height: 1.19;
 }
 
-.social__link {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0;
-  border: 0;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  cursor: pointer;
 }
 
 .social__link--team {
@@ -395,7 +405,60 @@ button {
   fill: currentColor;
 }
 
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients__thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--social-links-color);
+  border: 1px solid;
+  border-color: var(--social-links-color);
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: color var(--tra), border-color var(--tra);
+  transition: color var(--tra), border-color var(--tra);
+}
+
+.clients__thumb:hover,
+.clients__thumb:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients__icon {
+  fill: currentColor;
+}
+
 .page-header__logo {
   color: var(--white-color);
   margin-bottom: 20px;
+}
+
+.social__link--footer {
+  color: var(--white-color);
+  background-color: var(--background-footer-icon-color);
+  -webkit-transition: background-color var(--tra);
+  transition: background-color var(--tra);
+}
+
+.social__link--footer:hover,
+.social__link--footer:focus {
+  background-color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
