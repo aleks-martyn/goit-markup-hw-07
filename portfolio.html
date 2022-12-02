@@ -20,39 +20,37 @@
     <!-- Шапка сторінки -->
 
     <header class="page-header">
-      <div class="container header-container">
-        <nav class="logo-nav">
-          <a href="./index.html" class="logo-header logo"
-            ><span class="logo-link">Web</span>Studio</a
-          >
-
-          <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+      <div class="container container--header">
+        <nav class="page-header__nav">
+          <a href="./index.html" class="logo page-header__logo"><span class="logo__text">Web</span>Studio</a>
+    
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
-            <li class="item">
-              <a href="./index.html" class="link">Контакти</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
-
-        <ul class="contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="button primary link">
-              <svg class="button-icon icon" width="16" height="12">
+    
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com</a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="button primary link">
-              <svg class="button-icon icon" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11</a
-            >
+              +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
