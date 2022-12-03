@@ -75,7 +75,6 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .section__title {
   margin-bottom: 50px;
   color: var(--title-text-color);
@@ -100,7 +99,6 @@ button {
   line-height: 1.19;
   text-decoration: none;
 }
-
 .logo__text {
   color: var(--accent-color);
 }
@@ -113,9 +111,7 @@ button {
   -webkit-transition: color var(--tra);
   transition: color var(--tra);
 }
-
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:hover, .contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -135,9 +131,7 @@ button {
   -webkit-transition: background-color var(--tra);
   transition: background-color var(--tra);
 }
-
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: var(--button-active-color);
 }
 
@@ -444,7 +438,6 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .clients__thumb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,13 +458,10 @@ button {
   -webkit-transition: color var(--tra), border-color var(--tra);
   transition: color var(--tra), border-color var(--tra);
 }
-
-.clients__thumb:hover,
-.clients__thumb:focus {
+.clients__thumb:hover, .clients__thumb:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
-
 .clients__icon {
   fill: currentColor;
 }
