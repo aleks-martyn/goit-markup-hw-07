@@ -43,15 +43,15 @@
   display: flex;
   gap: 10px;
   justify-content: center;
+}
 
-  &__link--team {
-    color: var(--social-links-color);
-    background-color: var(--white-color);
-    transition: color var(--tra), background-color var(--tra);
-  }
+.social__link--team {
+  color: var(--social-links-color);
+  background-color: var(--white-color);
+  transition: color var(--tra), background-color var(--tra);
 
-  &__link--team:hover,
-  &__link--team:focus {
+  &:hover,
+  &:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
   }
