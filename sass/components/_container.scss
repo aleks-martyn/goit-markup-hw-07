@@ -1,7 +1,10 @@
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-inline: auto;
+  padding-inline: 15px;
   width: 1200px;
+
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
 }

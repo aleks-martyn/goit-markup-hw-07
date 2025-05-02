@@ -1,8 +1,11 @@
 $colors: (
   'primary-text': #757575,
-  'accent': #2196f3,
   'secondary-text': rgb(255 255 255 / 0.6),
+  'title-text': #212121,
+  'accent': #2196f3,
   'primary-bg': #fff,
+  'secondary-bg': #2f303a,
+  'additional-bg': #f5f4fa,
 );
 
 @function getColor($key) {
