@@ -1,11 +1,28 @@
 .logo {
-  display: block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  transition: color var(--tra);
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
 
   &__accent {
-    color: getcolor('accent');
+    color: getColor('accent');
   }
+}
+
+.nav__logo {
+  display: block;
+  padding-block: 24px;
+  color: getColor('title-text');
+}
+
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: getColor('primary-bg');
 }
