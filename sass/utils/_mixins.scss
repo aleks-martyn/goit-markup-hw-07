@@ -1,0 +1,4 @@
+@mixin set-gap($gap, $display: flex) {
+  display: $display;
+  gap: $gap;
+}

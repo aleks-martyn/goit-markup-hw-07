@@ -6,6 +6,8 @@ $colors: (
   'primary-bg': #fff,
   'secondary-bg': #2f303a,
   'additional-bg': #f5f4fa,
+  'primary-border': #ececec,
+  'works-title-bg': rgb(47 48 58 / 0.8),
 );
 
 @function getColor($key) {

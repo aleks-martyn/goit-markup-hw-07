@@ -1,31 +1,19 @@
-// .container--footer {
-//   display: flex;
-//   gap: 70px;
-//   align-items: baseline;
-// }
-
 .page-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--secondary-background-color);
-
-  // &__logo {
-  //   color: var(--white-color);
-  //   margin-bottom: 20px;
-  // }
+  padding-block: 60px;
+  background-color: getColor('secondary-bg');
 
   &__subtitle {
     margin-bottom: 20px;
-    color: var(--white-color);
     font-family: Roboto;
     font-size: 14px;
     line-height: 1.17;
+    color: var(--white-color);
     text-transform: uppercase;
   }
 }
 
-.address__item:not(:first-child) {
-  margin-top: 9px;
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .contacts-link--address {

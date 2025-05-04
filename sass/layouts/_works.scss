@@ -1,25 +1,20 @@
 .works {
-  display: flex;
-  gap: 30px;
+  @include set-gap(30px);
 
   &__item {
     position: relative;
   }
 
-  &__wrapper {
+  &__subtitle {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    background-color: var(--background-section-works-color);
-  }
-
-  &__title {
-    text-align: center;
+    padding-block: 27px;
     font-size: 14px;
     line-height: 1.14;
+    color: getColor('primary-bg');
+    text-align: center;
     text-transform: uppercase;
-    color: var(--white-color);
+    background-color: getColor('works-title-bg');
   }
 }
