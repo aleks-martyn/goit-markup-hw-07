@@ -2,10 +2,12 @@
   padding-block: 94px;
 
   &--colored {
+    @extend .section;
     background-color: getColor('additional-bg');
   }
 
   &--padding-bottom {
+    @extend .section;
     padding-top: 0;
   }
 

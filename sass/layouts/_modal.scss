@@ -68,17 +68,17 @@
   }
 }
 
-.form__input-wrapper {
+.modal-form__input-wrapper {
   position: relative;
   margin-bottom: 28px;
 }
 
-.form__comment-wrapper {
+.modal-form__comment-wrapper {
   position: relative;
   margin-bottom: 20px;
 }
 
-.form__label {
+.modal-form__label {
   position: absolute;
   top: -18px;
   left: 0;
@@ -88,7 +88,7 @@
   letter-spacing: 0.01em;
 }
 
-.form__input {
+.modal-form__input {
   display: block;
   width: 100%;
   height: 40px;
@@ -127,7 +127,7 @@
   }
 }
 
-.form__icon {
+.modal-form__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -135,7 +135,7 @@
   transform: translateY(-50%);
   transition: fill var(--tra);
 
-  .form__input:focus + & {
+  .modal-form__input:focus + & {
     fill: var(--accent-color);
   }
 }

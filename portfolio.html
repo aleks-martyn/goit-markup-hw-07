@@ -19,9 +19,9 @@
     <!-- Шапка сторінки -->
 
     <header class="page-header">
-      <div class="container container--flex">
+      <div class="container--flex">
         <nav class="nav">
-          <a class="logo nav__logo" href="./index.html"
+          <a class="nav__logo" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
 
@@ -46,7 +46,7 @@
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -55,7 +55,7 @@
           <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
               <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -356,9 +356,9 @@
     <!-- Футер -->
 
     <footer class="page-footer">
-      <div class="container container--flex">
+      <div class="container--flex">
         <div>
-          <a class="logo page-footer__logo" href="./index.html"
+          <a class="page-footer__logo" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
 
@@ -366,26 +366,22 @@
             <ul class="address__list">
               <li class="address__item">
                 <a
+                  class="address__link--colored"
+                  rel="noreferrer noopener"
                   href="https://goo.gl/maps/zwCasqjWgcNjda1f8"
                   target="_blank"
-                  rel="noreferrer noopener"
-                  class="contacts-link contacts-link--address"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
 
               <li class="address__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="contacts-link contacts-link--footer"
+                <a class="address__link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
 
               <li class="address__item">
-                <a
-                  href="tel:+380961111111"
-                  class="contacts-link contacts-link--footer"
+                <a class="address__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -393,57 +389,66 @@
           </address>
         </div>
 
-        <div class="page-footer__wrapper">
-          <h3 class="page-footer__subtitle">приєднуйтесь</h3>
-          <ul class="social">
-            <li class="social__item">
+        <div class="page-footer__inner">
+          <p class="page-footer__slogan">приєднуйтесь</p>
+
+          <ul class="socials">
+            <li class="socials__item">
               <a
+                class="socials__link--footer"
+                rel="noreferrer noopener"
                 href="https://www.instagram.com"
                 target="_blank"
-                rel="noreferrer noopener"
-                class="social__link social__link--footer"
+                aria-label="Instagram"
+                lang="en"
               >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                <svg class="socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social__item">
+            <li class="socials__item">
               <a
+                class="socials__link--footer"
+                rel="noreferrer noopener"
                 href="https://www.twitter.com"
                 target="_blank"
-                rel="noreferrer noopener"
-                class="social__link social__link--footer"
+                aria-label="Twitter"
+                lang="en"
               >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                <svg class="socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social__item">
+            <li class="socials__item">
               <a
+                class="socials__link--footer"
+                rel="noreferrer noopener"
                 href="https://www.facebook.com"
                 target="_blank"
-                rel="noreferrer noopener"
-                class="social__link social__link--footer"
+                aria-label="Facebook"
+                lang="en"
               >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                <svg class="socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social__item">
+            <li class="socials__item">
               <a
+                class="socials__link--footer"
+                rel="noreferrer noopener"
                 href="https://www.linkedin.com"
                 target="_blank"
-                rel="noreferrer noopener"
-                class="social__link social__link--footer"
+                aria-label="Linkedin"
+                lang="en"
               >
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                <svg class="socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -469,7 +474,7 @@
                 Підписатися
               </button>
               <svg class="page-footer__icon-send" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-send"></use>
+                <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </div>
           </form>

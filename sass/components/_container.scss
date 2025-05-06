@@ -4,6 +4,7 @@
   width: 1200px;
 
   &--flex {
+    @extend .container;
     display: flex;
     justify-content: space-between;
   }

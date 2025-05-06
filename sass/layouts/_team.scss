@@ -1,6 +1,5 @@
 .team {
-  display: flex;
-  gap: 30px;
+  @include set-gap(30px);
 
   &__item {
     flex-basis: calc((100% - 90px) / 4);
@@ -32,23 +31,5 @@
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
-  }
-}
-
-.social {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
-.social__link--team {
-  color: var(--social-links-color);
-  background-color: var(--white-color);
-  transition: color var(--tra), background-color var(--tra);
-
-  &:hover,
-  &:focus {
-    color: var(--white-color);
-    background-color: var(--accent-color);
   }
 }
