@@ -43,7 +43,7 @@
         <ul class="contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
+              <svg class="icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -52,7 +52,7 @@
 
           <li class="contacts__item">
             <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
+              <svg class="icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -67,7 +67,7 @@
 
       <section class="hero">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button button--hero" data-modal-open type="button">
+        <button class="button--order" data-modal-open type="button">
           Замовити послугу
         </button>
       </section>
@@ -79,53 +79,54 @@
           <h2 class="section__title visually-hidden">
             Перелік ефективних рішень
           </h2>
-          <ul class="feature">
-            <li class="feature__item">
-              <div class="feature__thumb">
-                <svg class="feature__icon" width="70" height="70">
+
+          <ul class="features">
+            <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="feature__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="feature__text">
+              <h3 class="features__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
 
-            <li class="feature__item">
-              <div class="feature__thumb">
-                <svg class="feature__icon" width="70" height="70">
+            <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="feature__title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="feature__text">
+              <h3 class="features__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
 
-            <li class="feature__item">
-              <div class="feature__thumb">
-                <svg class="feature__icon" width="70" height="70">
+            <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="feature__title">ПЛАНУВАННЯ</h3>
-              <p class="feature__text">
+              <h3 class="features__subtitle">ПЛАНУВАННЯ</h3>
+              <p class="features__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
-            <li class="feature__item">
-              <div class="feature__thumb">
-                <svg class="feature__icon" width="70" height="70">
+            <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="feature__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="feature__text">
+              <h3 class="features__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="features__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -139,6 +140,7 @@
       <section class="section--padding-bottom">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
+
           <ul class="works">
             <li class="works__item">
               <img
@@ -661,9 +663,9 @@
               />
             </label>
 
-            <button type="submit" class="button button--footer">
+            <button class="button--subscription" type="submit">
               Підписатися
-              <svg class="page-footer__icon-send" width="24" height="24">
+              <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -754,7 +756,7 @@
             >
           </div>
 
-          <button type="submit" class="button modal__button">Відправити</button>
+          <button class="button--send" type="submit">Відправити</button>
         </form>
       </div>
     </div>

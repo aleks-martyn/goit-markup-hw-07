@@ -455,30 +455,28 @@
           </ul>
         </div>
 
-        <div class="page-footer__subscription">
-          <h3 class="page-footer__subtitle">Підпишіться на розсилку</h3>
-          <form class="page-footer__form">
-            <div class="page-footer__field">
-              <label class="page-footer__label">
-                <input
-                  type="email"
-                  name="mail"
-                  class="page-footer__input"
-                  placeholder="E-mail"
-                />
-              </label>
-            </div>
+        <form class="form" name="subscription-form">
+          <fieldset class="form__fieldset">
+            <legend class="form__slogan">Підпишіться на розсилку</legend>
 
-            <div class="page-footer__send">
-              <button type="submit" class="button button--footer">
-                Підписатися
-              </button>
-              <svg class="page-footer__icon-send" width="24" height="24">
+            <label class="form__label">
+              <input
+                class="form__input"
+                name="email"
+                type="email"
+                aria-label="Електронна пошта"
+                placeholder="E-mail"
+              />
+            </label>
+
+            <button class="button--subscription" type="submit">
+              Підписатися
+              <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
-            </div>
-          </form>
-        </div>
+            </button>
+          </fieldset>
+        </form>
       </div>
     </footer>
   </body>

@@ -1,6 +1,7 @@
 @import './utils/colors';
 @import './utils/mixins';
 @import './utils/vars';
+@import './utils/icon';
 @import './base/reset';
 @import './utils/visually-hidden';
 
@@ -12,7 +13,7 @@
 
 @import './layouts/header';
 @import './layouts/hero';
-@import './layouts/feature';
+@import './layouts/features';
 @import './layouts/works';
 @import './layouts/team';
 @import './layouts/clients';

@@ -1,0 +1,28 @@
+.features {
+  @include set-gap(30px);
+
+  &__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+
+  &__thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: getColor('additional-bg');
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: getColor('title-text');
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
