@@ -6,6 +6,7 @@ $colors: (
   'primary-bg': #fff,
   'secondary-bg': #2f303a,
   'additional-bg': #f5f4fa,
+  'base-dark': #000,
   'primary-border': #ececec,
   'secondary-border': #eee,
   'button-active': #188ce8,
@@ -14,6 +15,11 @@ $colors: (
   'works-title-bg': rgb(47 48 58 / 0.8),
   'form-input-border': rgb(255 255 255 / 0.3),
   'btn-input-shadow': 0px 4px 4px rgb(0 0 0 / 0.15),
+  'team-item-shadow': (
+    0px 1px 3px rgb(0 0 0 / 0.12),
+    0px 1px 1px rgb(0 0 0 / 0.14),
+    0px 2px 1px rgb(0 0 0 / 0.2),
+  ),
 );
 
 @function getColor($key) {

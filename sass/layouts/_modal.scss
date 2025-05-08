@@ -39,7 +39,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1.17;
-    color: var(--title-text-color);
+    color: getColor('title-text');
     text-align: center;
     margin-bottom: 30px;
   }
@@ -57,14 +57,13 @@
   padding: 0;
   border: 1px solid var(--border-close-button-color);
   border-radius: 50%;
-  cursor: pointer;
-  fill: black;
+  color: getColor('base-dark');
   background-color: var(--white-color);
-  transition: fill var(--tra);
+  transition: color var(--tra);
 
   &:hover,
   &:focus {
-    fill: var(--accent-color);
+    color: getColor('accent');
   }
 }
 

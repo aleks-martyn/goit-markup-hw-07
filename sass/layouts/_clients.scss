@@ -1,28 +1,21 @@
 .clients {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-
-  &__icon {
-    fill: currentColor;
-  }
+  @include set-gap(30px);
 }
-.clients__thumb {
+
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 92px;
-  color: var(--social-links-color);
-  border: 1px solid;
-  border-color: var(--social-links-color);
+  color: getColor('socials-link');
+  border: 1px solid getColor('socials-link');
   border-radius: 4px;
-  cursor: pointer;
   transition: color var(--tra), border-color var(--tra);
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+    color: getColor('accent');
+    border-color: getColor('accent');
   }
 }
