@@ -1,15 +1,18 @@
 @import './utils/colors';
-@import './utils/mixins';
 @import './utils/vars';
-@import './utils/icon';
 @import './base/reset';
+@import './utils/mixins';
+@import './utils/icon';
 @import './utils/visually-hidden';
+@import './utils/no-scroll';
 
 @import './components/section';
 @import './components/container';
 @import './components/logo';
 @import './components/button';
 @import './components/socials';
+@import './components/lead-form';
+@import './components/policy';
 
 @import './layouts/header';
 @import './layouts/hero';

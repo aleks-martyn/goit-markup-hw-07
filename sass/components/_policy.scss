@@ -1,0 +1,40 @@
+.policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  &__checkbox {
+    position: absolute;
+    appearance: none;
+  }
+
+  &__link {
+    margin-left: 5px;
+    color: getColor('accent');
+    text-decoration: underline;
+  }
+}
+
+.policy__icon-wrap {
+  display: flex;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 1px solid getColor('title-text');
+  border-radius: 2px;
+  transition: background-color var(--tra), border-color var(--tra);
+
+  .policy__checkbox:focus + & {
+    outline: 1px solid getColor('base-dark');
+  }
+
+  .policy__checkbox:checked + & {
+    background-color: getColor('accent');
+    border-color: getColor('accent');
+  }
+}
