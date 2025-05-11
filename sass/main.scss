@@ -1,10 +1,10 @@
+@import './utils/mixins';
 @import './utils/colors';
 @import './utils/vars';
 @import './base/reset';
-@import './utils/mixins';
-@import './utils/icon';
 @import './utils/visually-hidden';
 @import './utils/no-scroll';
+@import './utils/icon';
 
 @import './components/section';
 @import './components/container';

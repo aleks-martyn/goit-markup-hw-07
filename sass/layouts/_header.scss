@@ -54,8 +54,8 @@
 }
 
 .contacts__link {
-  @extend %header-link;
   @include set-gap(10px);
+  @extend %header-link;
   align-items: center;
   color: getColor('primary-text');
 }
