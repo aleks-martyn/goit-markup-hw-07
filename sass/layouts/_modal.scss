@@ -31,19 +31,14 @@
 }
 
 .modal__close-button {
+  @include circle(30px);
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
   padding: 0;
   color: getColor('base-dark');
   background-color: transparent;
   border: 1px solid getColor('close-btn-border');
-  border-radius: 50%;
   transition: color var(--tra);
 
   &:hover,

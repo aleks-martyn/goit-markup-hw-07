@@ -2,3 +2,38 @@
   display: $display;
   gap: $gap;
 }
+
+@mixin flex-alignment($property, $gap) {
+  @include set-gap($gap);
+  #{$property}: center;
+}
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin circle($size) {
+  @include flex-centered;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+
+@mixin bordered($key, $radius: 4px) {
+  border: 1px solid getColor($key);
+  border-radius: $radius;
+}
+
+@mixin position(
+  $x-property,
+  $x-value,
+  $y-property,
+  $y-value,
+  $position: absolute
+) {
+  position: $position;
+  #{$x-property}: $x-value;
+  #{$y-property}: $y-value;
+}

@@ -6,8 +6,7 @@
   }
 
   &__subtitle {
-    position: absolute;
-    bottom: 0;
+    @include position(bottom, 0, left, 0);
     width: 100%;
     padding-block: 27px;
     font-size: 14px;

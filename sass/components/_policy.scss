@@ -1,7 +1,5 @@
 .policy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-centered;
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
@@ -20,13 +18,12 @@
 }
 
 .policy__icon-wrap {
+  @include bordered('title-text', 2px);
   display: flex;
   align-items: center;
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  border: 1px solid getColor('title-text');
-  border-radius: 2px;
   transition: background-color var(--tra), border-color var(--tra);
 
   .policy__checkbox:focus + & {

@@ -6,9 +6,7 @@
   }
 
   &__thumb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-centered;
     height: 120px;
     margin-bottom: 30px;
     background-color: getColor('additional-bg');

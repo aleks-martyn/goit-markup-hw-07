@@ -3,14 +3,11 @@
 }
 
 .clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-centered;
+  @include bordered('socials-link');
   width: 170px;
   height: 92px;
   color: getColor('socials-link');
-  border: 1px solid getColor('socials-link');
-  border-radius: 4px;
   transition: color var(--tra), border-color var(--tra);
 
   &:hover,

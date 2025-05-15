@@ -6,7 +6,7 @@
   letter-spacing: 0.06em;
   color: getColor('primary-bg');
   background-color: getColor('accent');
-  border: 0;
+  border: none;
   border-radius: 4px;
   box-shadow: getColor('btn-input-shadow');
   transition: background-color var(--tra);
