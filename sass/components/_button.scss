@@ -24,9 +24,8 @@
 }
 
 .button--subscription {
-  @include set-gap(14px);
+  @include flex-alignment(align-items, 14px);
   @extend %button-base;
-  align-items: center;
   width: 200px;
   padding-inline: 28px;
 }

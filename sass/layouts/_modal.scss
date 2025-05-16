@@ -1,7 +1,5 @@
 .backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
+  @include position(top, 0, left, 0, fixed);
   width: 100%;
   height: 100%;
   background-color: getColor('backdrop-bg');
@@ -14,9 +12,7 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  @include position(top, 50%, left, 50%);
   width: 528px;
   padding: 40px;
   background-color: getColor('primary-bg');
@@ -31,10 +27,8 @@
 }
 
 .modal__close-button {
+  @include position(top, 8px, right, 8px);
   @include circle(30px);
-  position: absolute;
-  top: 8px;
-  right: 8px;
   padding: 0;
   color: getColor('base-dark');
   background-color: transparent;

@@ -1,6 +1,5 @@
 .socials {
-  @include set-gap(10px);
-  justify-content: center;
+  @include flex-alignment(justify-content, 10px);
 }
 
 %socials__link {

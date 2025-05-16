@@ -1,6 +1,5 @@
 .filter {
-  @include set-gap(8px);
-  justify-content: center;
+  @include flex-alignment(justify-content, 8px);
   margin-bottom: 50px;
 
   &__input {

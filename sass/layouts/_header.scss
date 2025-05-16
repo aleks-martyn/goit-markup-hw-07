@@ -3,8 +3,7 @@
 }
 
 .nav {
-  @include set-gap(93px);
-  align-items: center;
+  @include flex-alignment(align-items, 93px);
 
   &__list {
     @include set-gap(50px);
@@ -36,10 +35,8 @@
     color: getColor('accent');
 
     &::after {
+      @include position(bottom, 0, left, 0);
       content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
       width: 100%;
       height: 4px;
       background-color: getColor('accent');
@@ -54,8 +51,7 @@
 }
 
 .contacts__link {
-  @include set-gap(10px);
+  @include flex-alignment(align-items, 10px);
   @extend %header-link;
-  align-items: center;
   color: getColor('primary-text');
 }

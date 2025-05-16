@@ -18,9 +18,8 @@
   }
 
   &__content {
+    @include partial-bordered('secondary-border');
     padding: 20px 24px;
-    border-inline: 1px solid getColor('secondary-border');
-    border-bottom: 1px solid getColor('secondary-border');
   }
 
   &__subtitle {
@@ -39,8 +38,7 @@
 }
 
 .project__overlay {
-  position: absolute;
-  bottom: 0;
+  @include position(bottom, 0, left, 0);
   width: 100%;
   height: 100%;
   padding: 63px 24px;

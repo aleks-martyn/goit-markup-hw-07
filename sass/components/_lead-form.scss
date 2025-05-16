@@ -64,9 +64,7 @@
 }
 
 .lead-form__icon {
-  position: absolute;
-  top: 38px;
-  left: 12px;
+  @include position(top, 38px, left, 12px);
   fill: getColor('title-text');
   transform: translateY(-50%);
   transition: fill var(--tra);
