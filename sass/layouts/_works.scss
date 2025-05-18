@@ -12,8 +12,10 @@
     font-size: 14px;
     line-height: 1.14;
     color: getColor('primary-bg');
-    text-align: center;
-    text-transform: uppercase;
+    text: {
+      align: center;
+      transform: uppercase;
+    }
     background-color: getColor('works-title-bg');
   }
 }

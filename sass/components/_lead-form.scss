@@ -33,9 +33,11 @@
   @include bordered('input-border');
   display: block;
   width: 100%;
-  padding-left: 42px;
-  padding-right: 16px;
-  padding-block: 12px;
+  padding: {
+    left: 42px;
+    right: 16px;
+    block: 12px;
+  }
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
