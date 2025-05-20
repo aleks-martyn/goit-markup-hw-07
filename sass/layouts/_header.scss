@@ -1,13 +1,13 @@
 .page-header {
   border-bottom: 1px solid getColor('primary-border');
+
+  &__nav {
+    @include flex-alignment(align-items, 93px);
+  }
 }
 
-.nav {
-  @include flex-alignment(align-items, 93px);
-
-  &__list {
-    @include set-gap(50px);
-  }
+.site-nav {
+  @include set-gap(50px);
 }
 
 %header-link {
@@ -24,13 +24,13 @@
   }
 }
 
-.nav__link {
+.site-nav__link {
   @extend %header-link;
   display: block;
   color: getColor('title-text');
 
   &--current {
-    @extend .nav__link;
+    @extend .site-nav__link;
     position: relative;
     color: getColor('accent');
 
