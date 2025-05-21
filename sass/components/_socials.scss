@@ -6,7 +6,7 @@
   @include circle(44px);
 }
 
-.socials__link--team {
+.socials__link--light {
   @extend %socials__link;
   color: getColor('socials-link');
   background-color: getColor('primary-bg');
@@ -19,7 +19,7 @@
   }
 }
 
-.socials__link--footer {
+.socials__link--dark {
   @extend %socials__link;
   color: getColor('primary-bg');
   background-color: getColor('socials-link-bg');
