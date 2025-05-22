@@ -18,20 +18,20 @@
   }
 }
 
-.button--order {
+.button--wide {
   @extend %button-base;
   min-width: 216px;
   padding-inline: 24px;
 }
 
-.button--subscription {
+.button--with-icon {
   @include flex-alignment(align-items, 14px);
   @extend %button-base;
   width: 200px;
   padding-inline: 28px;
 }
 
-.button--send {
+.button--medium {
   @extend %button-base;
   display: block;
   min-width: 200px;

@@ -102,7 +102,7 @@ ul {
           justify-content: space-between;
 }
 
-.page-footer__logo, .nav__logo {
+.page-footer__logo, .page-header__logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -110,11 +110,11 @@ ul {
   -webkit-transition: color var(--tra);
   transition: color var(--tra);
 }
-.page-footer__logo:hover, .nav__logo:hover, .page-footer__logo:focus, .nav__logo:focus {
+.page-footer__logo:hover, .page-header__logo:hover, .page-footer__logo:focus, .page-header__logo:focus {
   color: #2196f3;
 }
 
-.nav__logo {
+.page-header__logo {
   display: block;
   padding-block: 24px;
   color: #212121;
@@ -130,7 +130,7 @@ ul {
   color: #2196f3;
 }
 
-.button--send, .button--subscription, .button--order {
+.button--medium, .button--with-icon, .button--wide {
   padding-block: 10px;
   font-weight: 700;
   font-size: 16px;
@@ -145,16 +145,16 @@ ul {
   -webkit-transition: background-color var(--tra);
   transition: background-color var(--tra);
 }
-.button--send:hover, .button--subscription:hover, .button--order:hover, .button--send:focus, .button--subscription:focus, .button--order:focus {
+.button--medium:hover, .button--with-icon:hover, .button--wide:hover, .button--medium:focus, .button--with-icon:focus, .button--wide:focus {
   background-color: #188ce8;
 }
 
-.button--order {
+.button--wide {
   min-width: 216px;
   padding-inline: 24px;
 }
 
-.button--subscription {
+.button--with-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,7 +166,7 @@ ul {
   padding-inline: 28px;
 }
 
-.button--send {
+.button--medium {
   display: block;
   min-width: 200px;
   margin-inline: auto;
@@ -183,7 +183,7 @@ ul {
           justify-content: center;
 }
 
-.socials__link--footer, .socials__link--team {
+.socials__link--dark, .socials__link--light {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,24 +198,24 @@ ul {
   border-radius: 50%;
 }
 
-.socials__link--team {
+.socials__link--light {
   color: #afb1b8;
   background-color: #fff;
   -webkit-transition: color var(--tra), background-color var(--tra);
   transition: color var(--tra), background-color var(--tra);
 }
-.socials__link--team:hover, .socials__link--team:focus {
+.socials__link--light:hover, .socials__link--light:focus {
   color: #fff;
   background-color: #2196f3;
 }
 
-.socials__link--footer {
+.socials__link--dark {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: background-color var(--tra);
   transition: background-color var(--tra);
 }
-.socials__link--footer:hover, .socials__link--footer:focus {
+.socials__link--dark:hover, .socials__link--dark:focus {
   background-color: #2196f3;
 }
 
@@ -425,8 +425,7 @@ ul {
 .page-header {
   border-bottom: 1px solid #ececec;
 }
-
-.nav {
+.page-header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,14 +434,15 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-.nav__list {
+
+.site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
 
-.contacts__link, .nav__link, .nav__link--current {
+.contacts__link, .site-nav__link, .site-nav__link--current {
   padding-block: 32px;
   font-weight: 500;
   font-size: 14px;
@@ -451,19 +451,19 @@ ul {
   -webkit-transition: color var(--tra);
   transition: color var(--tra);
 }
-.contacts__link:hover, .nav__link:hover, .nav__link--current:hover, .contacts__link:focus, .nav__link:focus, .nav__link--current:focus {
+.contacts__link:hover, .site-nav__link:hover, .site-nav__link--current:hover, .contacts__link:focus, .site-nav__link:focus, .site-nav__link--current:focus {
   color: #2196f3;
 }
 
-.nav__link, .nav__link--current {
+.site-nav__link, .site-nav__link--current {
   display: block;
   color: #212121;
 }
-.nav__link--current {
+.site-nav__link--current {
   position: relative;
   color: #2196f3;
 }
-.nav__link--current::after {
+.site-nav__link--current::after {
   position: absolute;
   bottom: 0;
   left: 0;
