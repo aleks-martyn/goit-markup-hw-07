@@ -1,21 +1,24 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
 .works {
-  @include set-gap(30px);
+  @include m.set-gap(30px);
 
   &__item {
     position: relative;
   }
 
   &__subtitle {
-    @include position(bottom, 0, left, 0);
+    @include m.position(bottom, 0, left, 0);
     width: 100%;
     padding-block: 27px;
     font-size: 14px;
     line-height: 1.14;
-    color: getColor('primary-bg');
+    color: c.getColor('primary-bg');
     text: {
       align: center;
       transform: uppercase;
     }
-    background-color: getColor('works-title-bg');
+    background-color: c.getColor('works-title-bg');
   }
 }

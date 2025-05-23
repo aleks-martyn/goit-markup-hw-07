@@ -1,3 +1,5 @@
+@use '../utils/colors' as c;
+
 %logo {
   font: {
     family: Raleway, sans-serif;
@@ -9,7 +11,7 @@
 
   &:hover,
   &:focus {
-    color: getColor('accent');
+    color: c.getColor('accent');
   }
 }
 
@@ -17,16 +19,16 @@
   @extend %logo;
   display: block;
   padding-block: 24px;
-  color: getColor('title-text');
+  color: c.getColor('title-text');
 }
 
 .page-footer__logo {
   @extend %logo;
   display: inline-block;
   margin-bottom: 20px;
-  color: getColor('primary-bg');
+  color: c.getColor('primary-bg');
 }
 
 .logo__accent {
-  color: getColor('accent');
+  color: c.getColor('accent');
 }

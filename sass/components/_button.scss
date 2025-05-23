@@ -1,20 +1,23 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
 %button-base {
   padding-block: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: getColor('primary-bg');
-  background-color: getColor('accent');
+  color: c.getColor('primary-bg');
+  background-color: c.getColor('accent');
   border: none {
     radius: 4px;
   }
-  box-shadow: getColor('btn-input-shadow');
+  box-shadow: c.getColor('btn-input-shadow');
   transition: background-color var(--tra);
 
   &:hover,
   &:focus {
-    background-color: getColor('button-active');
+    background-color: c.getColor('button-active');
   }
 }
 
@@ -25,7 +28,7 @@
 }
 
 .button--with-icon {
-  @include flex-alignment(align-items, 14px);
+  @include m.flex-alignment(align-items, 14px);
   @extend %button-base;
   width: 200px;
   padding-inline: 28px;

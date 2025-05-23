@@ -1,3 +1,5 @@
+@use '../utils/colors' as c;
+
 @mixin set-gap($gap, $display: flex) {
   display: $display;
   gap: $gap;
@@ -22,13 +24,13 @@
 }
 
 @mixin bordered($key, $radius: 4px) {
-  border: 1px solid getColor($key);
+  border: 1px solid c.getColor($key);
   border-radius: $radius;
 }
 
 @mixin partial-bordered($key) {
-  border-inline: 1px solid getColor($key);
-  border-bottom: 1px solid getColor($key);
+  border-inline: 1px solid c.getColor($key);
+  border-bottom: 1px solid c.getColor($key);
 }
 
 @mixin position(

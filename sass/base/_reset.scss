@@ -1,8 +1,10 @@
+@use '../utils/colors' as c;
+
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  color: getColor('primary-text');
-  background-color: getColor('primary-bg');
+  color: c.getColor('primary-text');
+  background-color: c.getColor('primary-bg');
 }
 
 h1,

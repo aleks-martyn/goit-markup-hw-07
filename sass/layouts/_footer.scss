@@ -1,6 +1,9 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
 .page-footer {
   padding-block: 60px;
-  background-color: getColor('secondary-bg');
+  background-color: c.getColor('secondary-bg');
 
   &__inner {
     padding-top: 12px;
@@ -11,7 +14,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
-    color: getColor('primary-bg');
+    color: c.getColor('primary-bg');
     text-transform: uppercase;
   }
 }
@@ -25,17 +28,17 @@
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: getColor('secondary-text');
+  color: c.getColor('secondary-text');
   transition: color var(--tra);
 
   &--colored {
     @extend .address__link;
-    color: getColor('primary-bg');
+    color: c.getColor('primary-bg');
   }
 
   &:hover,
   &:focus {
-    color: getColor('accent');
+    color: c.getColor('accent');
   }
 }
 
@@ -43,7 +46,7 @@
   padding-top: 12px;
 
   &__fieldset {
-    @include set-gap(12px);
+    @include m.set-gap(12px);
   }
 
   &__slogan {
@@ -52,7 +55,7 @@
 }
 
 .form__input {
-  @include bordered('form-input-border');
+  @include m.bordered('form-input-border');
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -60,10 +63,10 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: getColor('secondary-text');
-  background-color: getColor('secondary-bg');
+  color: c.getColor('secondary-text');
+  background-color: c.getColor('secondary-bg');
   outline: transparent;
-  box-shadow: getColor('btn-input-shadow');
+  box-shadow: c.getColor('btn-input-shadow');
   transition: border-color var(--tra);
 
   &::placeholder {
@@ -71,10 +74,10 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: getColor('secondary-text');
+    color: c.getColor('secondary-text');
   }
 
   &:focus {
-    border-color: getColor('accent');
+    border-color: c.getColor('accent');
   }
 }

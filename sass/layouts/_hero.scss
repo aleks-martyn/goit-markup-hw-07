@@ -1,3 +1,5 @@
+@use '../utils/colors' as c;
+
 .hero {
   margin-inline: auto;
   padding-top: 200px;
@@ -5,12 +7,12 @@
   min-height: 600px;
   text-align: center;
   background: {
-    image: linear-gradient(getColor('hero-grad'), getColor('hero-grad')),
-      url(../images/bg-img-hero.jpg);
+    image: linear-gradient(c.getColor('hero-grad'), c.getColor('hero-grad')),
+      url(../../images/bg-img-hero.jpg);
     repeat: no-repeat;
     position: top;
     size: cover;
-    color: getColor('secondary-bg');
+    color: c.getColor('secondary-bg');
   }
 
   &__title {
@@ -23,7 +25,7 @@
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    color: getColor('primary-bg');
+    color: c.getColor('primary-bg');
     text-transform: uppercase;
   }
 }

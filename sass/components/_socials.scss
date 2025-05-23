@@ -1,32 +1,35 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
 .socials {
-  @include flex-alignment(justify-content, 10px);
+  @include m.flex-alignment(justify-content, 10px);
 }
 
 %socials__link {
-  @include circle(44px);
+  @include m.circle(44px);
 }
 
 .socials__link--light {
   @extend %socials__link;
-  color: getColor('socials-link');
-  background-color: getColor('primary-bg');
+  color: c.getColor('socials-link');
+  background-color: c.getColor('primary-bg');
   transition: color var(--tra), background-color var(--tra);
 
   &:hover,
   &:focus {
-    color: getColor('primary-bg');
-    background-color: getColor('accent');
+    color: c.getColor('primary-bg');
+    background-color: c.getColor('accent');
   }
 }
 
 .socials__link--dark {
   @extend %socials__link;
-  color: getColor('primary-bg');
-  background-color: getColor('socials-link-bg');
+  color: c.getColor('primary-bg');
+  background-color: c.getColor('socials-link-bg');
   transition: background-color var(--tra);
 
   &:hover,
   &:focus {
-    background-color: getColor('accent');
+    background-color: c.getColor('accent');
   }
 }

@@ -1,3 +1,6 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
 .lead-form__group {
   margin-bottom: 20px;
 }
@@ -7,7 +10,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1.17;
-  color: getColor('title-text');
+  color: c.getColor('title-text');
   text-align: center;
 }
 
@@ -30,7 +33,7 @@
 }
 
 .lead-form__input {
-  @include bordered('input-border');
+  @include m.bordered('input-border');
   display: block;
   width: 100%;
   padding: {
@@ -42,7 +45,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: getColor('title-text');
+  color: c.getColor('title-text');
   outline: transparent;
   transition: border-color var(--tra);
 
@@ -51,11 +54,11 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: getColor('input-placeholder');
+    color: c.getColor('input-placeholder');
   }
 
   &:focus {
-    border-color: getColor('accent');
+    border-color: c.getColor('accent');
   }
 
   &--comment {
@@ -66,12 +69,12 @@
 }
 
 .lead-form__icon {
-  @include position(top, 38px, left, 12px);
-  fill: getColor('title-text');
+  @include m.position(top, 38px, left, 12px);
+  fill: c.getColor('title-text');
   transform: translateY(-50%);
   transition: fill var(--tra);
 
   .lead-form__field:focus-within > & {
-    fill: getColor('accent');
+    fill: c.getColor('accent');
   }
 }

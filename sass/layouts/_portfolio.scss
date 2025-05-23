@@ -1,5 +1,8 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
 .grid {
-  @include set-gap(30px, grid);
+  @include m.set-gap(30px, grid);
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -9,7 +12,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: getColor('project-link-shadow');
+    box-shadow: c.getColor('project-link-shadow');
   }
 
   &__thumb {
@@ -18,7 +21,7 @@
   }
 
   &__content {
-    @include partial-bordered('secondary-border');
+    @include m.partial-bordered('secondary-border');
     padding: 20px 24px;
   }
 
@@ -27,25 +30,25 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: getColor('title-text');
+    color: c.getColor('title-text');
   }
 
   &__desc {
     font-size: 16px;
     line-height: 1.88;
-    color: getColor('primary-text');
+    color: c.getColor('primary-text');
   }
 }
 
 .project__overlay {
-  @include position(bottom, 0, left, 0);
+  @include m.position(bottom, 0, left, 0);
   width: 100%;
   height: 100%;
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
-  color: getColor('primary-bg');
-  background-color: getColor('overlay-bg');
+  color: c.getColor('primary-bg');
+  background-color: c.getColor('overlay-bg');
   transform: translateY(100%);
   transition: transform var(--tra);
 

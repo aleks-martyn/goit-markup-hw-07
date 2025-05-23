@@ -1,8 +1,11 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
 .backdrop {
-  @include position(top, 0, left, 0, fixed);
+  @include m.position(top, 0, left, 0, fixed);
   width: 100%;
   height: 100%;
-  background-color: getColor('backdrop-bg');
+  background-color: c.getColor('backdrop-bg');
   transition: opacity var(--tra);
 }
 
@@ -12,13 +15,13 @@
 }
 
 .modal {
-  @include position(top, 50%, left, 50%);
+  @include m.position(top, 50%, left, 50%);
   width: 528px;
   padding: 40px;
-  background-color: getColor('primary-bg');
+  background-color: c.getColor('primary-bg');
   border-radius: 4px;
   transform: translate(-50%, -50%) scaleY(1);
-  box-shadow: getColor('box-shadow');
+  box-shadow: c.getColor('box-shadow');
   transition: transform var(--tra);
 
   .backdrop.is-hidden & {
@@ -27,16 +30,16 @@
 }
 
 .modal__close-button {
-  @include position(top, 8px, right, 8px);
-  @include circle(30px);
+  @include m.position(top, 8px, right, 8px);
+  @include m.circle(30px);
   padding: 0;
-  color: getColor('base-dark');
+  color: c.getColor('base-dark');
   background-color: transparent;
-  border: 1px solid getColor('close-btn-border');
+  border: 1px solid c.getColor('close-btn-border');
   transition: color var(--tra);
 
   &:hover,
   &:focus {
-    color: getColor('accent');
+    color: c.getColor('accent');
   }
 }

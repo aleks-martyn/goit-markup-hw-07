@@ -1,9 +1,11 @@
+@use '../utils/colors' as c;
+
 .section {
   padding-block: 94px;
 
   &--colored {
     @extend .section;
-    background-color: getColor('additional-bg');
+    background-color: c.getColor('additional-bg');
   }
 
   &--padding-bottom {
@@ -15,7 +17,7 @@
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
-    color: getColor('title-text');
+    color: c.getColor('title-text');
     text-align: center;
   }
 }

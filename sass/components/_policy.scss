@@ -1,5 +1,8 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
 .policy {
-  @include flex-centered;
+  @include m.flex-centered;
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
@@ -12,13 +15,13 @@
 
   &__link {
     margin-left: 5px;
-    color: getColor('accent');
+    color: c.getColor('accent');
     text-decoration: underline;
   }
 }
 
 .policy__icon-wrap {
-  @include bordered('title-text', 2px);
+  @include m.bordered('title-text', 2px);
   display: flex;
   align-items: center;
   width: 16px;
@@ -27,11 +30,11 @@
   transition: background-color var(--tra), border-color var(--tra);
 
   .policy__checkbox:focus + & {
-    outline: 1px solid getColor('base-dark');
+    outline: 1px solid c.getColor('base-dark');
   }
 
   .policy__checkbox:checked + & {
-    background-color: getColor('accent');
-    border-color: getColor('accent');
+    background-color: c.getColor('accent');
+    border-color: c.getColor('accent');
   }
 }

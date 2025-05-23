@@ -1,18 +1,21 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
 .clients {
-  @include set-gap(30px);
+  @include m.set-gap(30px);
 }
 
 .clients__link {
-  @include flex-centered;
-  @include bordered('socials-link');
+  @include m.flex-centered;
+  @include m.bordered('socials-link');
   width: 170px;
   height: 92px;
-  color: getColor('socials-link');
+  color: c.getColor('socials-link');
   transition: color var(--tra), border-color var(--tra);
 
   &:hover,
   &:focus {
-    color: getColor('accent');
-    border-color: getColor('accent');
+    color: c.getColor('accent');
+    border-color: c.getColor('accent');
   }
 }

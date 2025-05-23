@@ -1,5 +1,8 @@
+@use '../utils/colors' as c;
+@use '../utils/mixins' as m;
+
 .filter {
-  @include flex-alignment(justify-content, 8px);
+  @include m.flex-alignment(justify-content, 8px);
   margin-bottom: 50px;
 
   &__input {
@@ -15,26 +18,26 @@
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  color: getColor('title-text');
-  background-color: getColor('additional-bg');
+  color: c.getColor('title-text');
+  background-color: c.getColor('additional-bg');
   border-radius: 4px;
   cursor: pointer;
   transition: color var(--tra), background-color var(--tra),
     box-shadow var(--tra);
 
   &:hover {
-    color: getColor('primary-bg');
-    background-color: getColor('accent');
-    box-shadow: getColor('filter-btn-shadow');
+    color: c.getColor('primary-bg');
+    background-color: c.getColor('accent');
+    box-shadow: c.getColor('filter-btn-shadow');
   }
 
   .filter__input:checked + & {
-    color: getColor('primary-bg');
-    background-color: getColor('button-active');
-    box-shadow: getColor('filter-btn-shadow');
+    color: c.getColor('primary-bg');
+    background-color: c.getColor('button-active');
+    box-shadow: c.getColor('filter-btn-shadow');
   }
 
   .filter__input:focus + & {
-    outline: 2px solid getColor('base-dark');
+    outline: 2px solid c.getColor('base-dark');
   }
 }
