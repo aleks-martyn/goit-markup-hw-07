@@ -1,5 +1,6 @@
 @use '../utils/colors' as c;
 @use '../utils/mixins' as m;
+@use '../components/policy';
 
 .lead-form__group {
   margin-bottom: 20px;

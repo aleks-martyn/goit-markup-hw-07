@@ -1,15 +1,11 @@
 @use './utils/vars';
-@use './utils/colors';
-@use './utils/mixins';
 @use './base/reset';
 
 @use './components/section';
 @use './components/container';
 @use './components/button';
-@use './components/lead-form';
 @use './components/logo';
 @use './components/socials';
-@use './components/policy';
 @use './components/portfolio-filter';
 
 @use './layouts/header';

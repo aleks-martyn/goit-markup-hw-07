@@ -1,5 +1,6 @@
 @use '../utils/colors' as c;
 @use '../utils/mixins' as m;
+@use '../components/lead-form';
 
 .backdrop {
   @include m.position(top, 0, left, 0, fixed);
