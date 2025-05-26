@@ -1,3 +1,5 @@
+$base-dark: #000;
+
 $colors: (
   'primary-text': #757575,
   'secondary-text': rgb(255 255 255 / 0.6),
@@ -6,7 +8,7 @@ $colors: (
   'primary-bg': #fff,
   'secondary-bg': #2f303a,
   'additional-bg': #f5f4fa,
-  'base-dark': #000,
+  'base-dark': $base-dark,
   'primary-border': #ececec,
   'secondary-border': #eee,
   'button-active': #188ce8,
@@ -15,26 +17,26 @@ $colors: (
   'socials-link-bg': rgb(255 255 255 / 0.1),
   'works-title-bg': rgb(47 48 58 / 0.8),
   'form-input-border': rgb(255 255 255 / 0.3),
-  'backdrop-bg': rgb(0 0 0 / 0.2),
-  'close-btn-border': rgb(0 0 0 / 0.1),
+  'backdrop-bg': rgb($base-dark, 0.2),
+  'close-btn-border': rgb($base-dark, 0.1),
   'input-border': rgb(33 33 33 / 0.2),
   'input-placeholder': rgb(117 117 117 / 0.5),
   'overlay-bg': rgb(33 150 243 / 0.9),
-  'btn-input-shadow': 0px 4px 4px rgb(0 0 0 / 0.15),
+  'btn-input-shadow': 0px 4px 4px rgb($base-dark, 0.15),
   'box-shadow': (
-    0px 1px 3px rgb(0 0 0 / 0.12),
-    0px 1px 1px rgb(0 0 0 / 0.14),
-    0px 2px 1px rgb(0 0 0 / 0.2),
+    0px 1px 3px rgb($base-dark, 0.12),
+    0px 1px 1px rgb($base-dark, 0.14),
+    0px 2px 1px rgb($base-dark, 0.2),
   ),
   'filter-btn-shadow': (
-    0px 3px 1px rgb(0 0 0 / 0.1),
-    0px 1px 2px rgb(0 0 0 / 0.08),
-    0px 2px 2px rgb(0 0 0 / 0.12),
+    0px 3px 1px rgb($base-dark, 0.1),
+    0px 1px 2px rgb($base-dark, 0.08),
+    0px 2px 2px rgb($base-dark, 0.12),
   ),
   'project-link-shadow': (
-    0px 1px 1px rgb(0 0 0 / 0.12),
-    0px 4px 4px rgb(0 0 0 / 0.06),
-    1px 4px 6px rgb(0 0 0 / 0.16),
+    0px 1px 1px rgb($base-dark, 0.12),
+    0px 4px 4px rgb($base-dark, 0.06),
+    1px 4px 6px rgb($base-dark, 0.16),
   ),
 );
 
