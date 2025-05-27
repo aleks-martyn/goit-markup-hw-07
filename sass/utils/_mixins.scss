@@ -44,3 +44,15 @@
   #{$x-property}: $x-value;
   #{$y-property}: $y-value;
 }
+
+@mixin text-style(
+  $font-weight,
+  $font-size,
+  $line-height,
+  $letter-spacing: 0.03em
+) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
