@@ -82,11 +82,11 @@ ul {
 }
 
 .button--medium, .button--with-icon, .button--wide {
-  padding-block: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  padding-block: 10px;
   color: #fff;
   background-color: #2196f3;
   border: none;

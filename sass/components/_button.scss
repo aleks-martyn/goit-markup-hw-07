@@ -2,11 +2,8 @@
 @use '../utils/mixins' as m;
 
 %button-base {
+  @include m.text-style(700, 16px, 1.88, 0.06em);
   padding-block: 10px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
   color: c.getColor('primary-bg');
   background-color: c.getColor('accent');
   border: none {
