@@ -22,16 +22,13 @@
   }
 
   &__name {
+    @include m.text-style(500, 16px, 1.19);
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
     color: c.getColor('title-text');
   }
 
   &__position {
+    @include m.text-style(400, 16px, 1.19);
     margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.19;
   }
 }

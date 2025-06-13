@@ -1,12 +1,9 @@
 @use '../utils/colors' as c;
+@use '../utils/mixins' as m;
 
 %logo {
-  font: {
-    family: Raleway, sans-serif;
-    weight: 700;
-    size: 26px;
-  }
-  line-height: 1.19;
+  @include m.text-style(700, 26px, 1.19);
+  font-family: Raleway, sans-serif;
   transition: color var(--tra);
 
   &:hover,

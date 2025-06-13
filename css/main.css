@@ -4,7 +4,6 @@
 
 body {
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
   color: #757575;
   background-color: #fff;
 }
@@ -60,9 +59,11 @@ ul {
   padding-top: 0;
 }
 .section__title {
-  margin-bottom: 50px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
   color: #212121;
   text-align: center;
 }
@@ -125,10 +126,11 @@ ul {
 }
 
 .page-footer__logo, .page-header__logo {
-  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-family: Raleway, sans-serif;
   -webkit-transition: color var(--tra);
   transition: color var(--tra);
 }
@@ -216,12 +218,12 @@ ul {
 }
 
 .filter__label {
-  display: inline-block;
-  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  display: inline-block;
+  padding: 6px 22px;
   color: #212121;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -268,11 +270,11 @@ ul {
 }
 
 .contacts__link, .site-nav__link, .site-nav__link--current {
-  padding-block: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-block: 32px;
   -webkit-transition: color var(--tra);
   transition: color var(--tra);
 }
@@ -333,13 +335,13 @@ ul {
   background-color: #2f303a;
 }
 .hero__title {
-  margin-inline: auto;
-  margin-bottom: 30px;
-  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  margin-inline: auto;
+  margin-bottom: 30px;
+  max-width: 696px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -369,14 +371,18 @@ ul {
   background-color: #f5f4fa;
 }
 .features__subtitle {
-  margin-bottom: 10px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
   color: #212121;
 }
 .features__text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .works {
@@ -392,10 +398,12 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  padding-block: 27px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  width: 100%;
+  padding-block: 27px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -426,16 +434,19 @@ ul {
   margin-bottom: 30px;
 }
 .team-member__name {
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
   color: #212121;
 }
 .team-member__position {
-  margin-bottom: 16px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .clients {
@@ -476,10 +487,11 @@ ul {
   padding-top: 12px;
 }
 .page-footer__slogan, .form__slogan {
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -514,15 +526,15 @@ ul {
   gap: 12px;
 }
 .form__input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 358px;
   height: 50px;
   padding: 15px 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
   outline: transparent;
@@ -580,10 +592,11 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 .policy__checkbox {
   position: absolute;
@@ -625,10 +638,11 @@ ul {
 }
 
 .lead-form__slogan {
-  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
   color: #212121;
   text-align: center;
 }
@@ -642,15 +656,19 @@ ul {
 }
 
 .lead-form__label {
-  display: block;
-  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .lead-form__input, .lead-form__input--comment {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   display: block;
@@ -658,10 +676,6 @@ ul {
   padding-left: 42px;
   padding-right: 16px;
   padding-block: 12px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
   color: #212121;
   outline: transparent;
   -webkit-transition: border-color var(--tra);
@@ -816,15 +830,18 @@ ul {
   padding: 20px 24px;
 }
 .project__subtitle {
-  margin-bottom: 4px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
   color: #212121;
 }
 .project__desc {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -832,11 +849,13 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
   width: 100%;
   height: 100%;
   padding: 63px 24px;
-  font-size: 18px;
-  line-height: 1.56;
   color: #fff;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);

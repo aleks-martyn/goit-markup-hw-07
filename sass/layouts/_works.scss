@@ -10,10 +10,9 @@
 
   &__subtitle {
     @include m.position(bottom, 0, left, 0);
+    @include m.text-style(700, 14px, 1.14);
     width: 100%;
     padding-block: 27px;
-    font-size: 14px;
-    line-height: 1.14;
     color: c.getColor('primary-bg');
     text: {
       align: center;

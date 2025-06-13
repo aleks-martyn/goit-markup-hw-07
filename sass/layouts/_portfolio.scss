@@ -26,27 +26,23 @@
   }
 
   &__subtitle {
+    @include m.text-style(700, 18px, 2, 0.06em);
     margin-bottom: 4px;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
     color: c.getColor('title-text');
   }
 
   &__desc {
-    font-size: 16px;
-    line-height: 1.88;
+    @include m.text-style(400, 16px, 1.88);
     color: c.getColor('primary-text');
   }
 }
 
 .project__overlay {
   @include m.position(bottom, 0, left, 0);
+  @include m.text-style(400, 18px, 1.56);
   width: 100%;
   height: 100%;
   padding: 63px 24px;
-  font-size: 18px;
-  line-height: 1.56;
   color: c.getColor('primary-bg');
   background-color: c.getColor('overlay-bg');
   transform: translateY(100%);

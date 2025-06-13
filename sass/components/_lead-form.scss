@@ -7,10 +7,8 @@
 }
 
 .lead-form__slogan {
+  @include m.text-style(700, 20px, 1.17);
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.17;
   color: c.getColor('title-text');
   text-align: center;
 }
@@ -25,15 +23,13 @@
 }
 
 .lead-form__label {
+  @include m.text-style(400, 12px, 1.17, 0.01em);
   display: block;
   margin-bottom: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
 }
 
 .lead-form__input {
+  @include m.text-style(400, 12px, 1.17, 0.01em);
   @include m.bordered('input-border');
   display: block;
   width: 100%;
@@ -42,19 +38,12 @@
     right: 16px;
     block: 12px;
   }
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
   color: c.getColor('title-text');
   outline: transparent;
   transition: border-color var(--tra);
 
   &::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include m.text-style(400, 12px, 1.17, 0.01em);
     color: c.getColor('input-placeholder');
   }
 

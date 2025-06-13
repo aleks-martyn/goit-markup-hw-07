@@ -16,14 +16,12 @@
   }
 
   &__subtitle {
+    @include m.text-style(700, 14px, 1.14);
     margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 1.14;
     color: c.getColor('title-text');
   }
 
   &__text {
-    font-size: 14px;
-    line-height: 1.71;
+    @include m.text-style(400, 14px, 1.71);
   }
 }

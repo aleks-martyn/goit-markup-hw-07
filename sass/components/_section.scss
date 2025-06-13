@@ -1,4 +1,5 @@
 @use '../utils/colors' as c;
+@use '../utils/mixins' as m;
 
 .section {
   padding-block: 94px;
@@ -14,9 +15,8 @@
   }
 
   &__title {
+    @include m.text-style(700, 36px, 1.17);
     margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.17;
     color: c.getColor('title-text');
     text-align: center;
   }

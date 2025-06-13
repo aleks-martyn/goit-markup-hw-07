@@ -3,10 +3,8 @@
 
 .policy {
   @include m.flex-centered;
+  @include m.text-style(400, 14px, 1.71);
   margin-bottom: 30px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
 
   &__checkbox {
     position: absolute;
